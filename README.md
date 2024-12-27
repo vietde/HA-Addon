@@ -1,4 +1,4 @@
-# Davide's Home Assistant Add-Ons
+# Vietde's Home Assistant Add-Ons
 
 This is a personal repository for [Home Assistant](https://www.home-assistant.io) add-ons.
 
