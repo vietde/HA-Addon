@@ -1,13 +1,21 @@
-# Homebridge addon for Home Assistant
+# Home Assistant Add-on: Homebridge
 
-This is an [Homebridge](https://homebridge.io) add-on for [Home Assistant](https://www.home-assistant.io). Homebridge provides a lightweight HomeKit API implementation with plugin support.
+![Supports aarch64 Architecture][aarch64-shield]
+![Supports amd64 Architecture][amd64-shield]
+![Supports armhf Architecture][armhf-shield]
+![Supports armv7 Architecture][armv7-shield]
+![Supports i386 Architecture][i386-shield]
 
-Note that Home Assistant supports HomeKit natively these days, both as a [controller](https://www.home-assistant.io/integrations/homekit_controller/) and as a [device](https://www.home-assistant.io/integrations/homekit/), so you probably don't need Homebridge if you just want to integrate with the HomeKit ecosystem. However, Homebrige has a lot of plugins, so it can still be useful to bridge some less-supported devices (e.g. [Nest](https://github.com/chrisjshull/homebridge-nest)) into Home Assistant.
+_Homebridge - HomeKit support for the impatient._
 
-## Installation
-Add the [add-on repository](https://github.com/davide125/hassio-addons) and install Homebridge from the add-on store.
+## About
 
-To configure Homebridge click on OPEN WEB UI from the add-on page.
+This Ubuntu Linux based Docker image allows you to run Nfarina's Homebridge on your home network which emulates the iOS HomeKit API.
 
-## Credits
-This add-on was inspired by [adsb-multi-portal-feeder](https://github.com/MaxWinterstein/homeassistant-addons/tree/main/adsb-multi-portal-feeder) to leverage a pre-existing Docker image and integrate it into an add-on ([Docker Homebridge](https://github.com/oznu/docker-homebridge) in this case). The add-on icon is derived from [Material Design Icons](https://materialdesignicons.com/icon/home-automation). These projects (and Homebridge itself) deserve all the credit here. This add-on is unrelated to the deprecated [addon-homebridge](https://github.com/hassio-addons/addon-homebridge).
+See https://hub.docker.com/r/homebridge/homebridge
+
+[aarch64-shield]: https://img.shields.io/badge/aarch64-no-red.svg
+[amd64-shield]: https://img.shields.io/badge/amd64-yes-green.svg
+[armhf-shield]: https://img.shields.io/badge/armhf-no-red.svg
+[armv7-shield]: https://img.shields.io/badge/armv7-yes-green.svg
+[i386-shield]: https://img.shields.io/badge/i386-no-red.svg

@@ -1,18 +1,15 @@
-# Vietde's Home Assistant Add-Ons
+# tronikos' Home Assistant add-ons repository
 
-This is a personal repository for [Home Assistant](https://www.home-assistant.io) add-ons.
-
-## Installation
-
-* Go to the Supervisor panel in Home Assistant
-* Go to the "Add-on Store" tab
-* Click the "three dots" icon in the top right corner and choose "Repositories"
-* Paste `https://github.com/vietde/HA-addon` in the "Add" text field and click "Add", then "Close"
+[![Open your Home Assistant instance and show the add add-on repository dialog with a specific repository URL pre-filled.](https://my.home-assistant.io/badges/supervisor_add_addon_repository.svg)](https://my.home-assistant.io/redirect/supervisor_add_addon_repository/?repository_url=https%3A%2F%2Fgithub.com%2Ftronikos%2Fhome-assistant-addons)
 
 ## Add-ons
 
-* [Homebridge](homebridge/): Lightweight HomeKit API implementation with plugin support
+This repository contains the following add-ons:
 
-## License
+### [Homebridge](./homebridge)
 
-Unless otherwise specified, everything in the repository is Apache 2.0 licensed.
+_Homebridge - HomeKit support for the impatient._
+
+### [OpenSpeedTest](./openspeedtest)
+
+_Free & Open-Source HTML5 Network Performance Estimation Tool._

@@ -1,20 +1,22 @@
-name: Homebridge
-version: 0.1.0
-stage: experimental
-slug: homebridge
-description: Lightweight HomeKit API implementation with plugin support
-url: https://github.com/vietde/HA-addons/tree/main/homebridge
 arch:
-  - armv7
-  - aarch64
-  - amd64
+- armv7
+- amd64
+backup_exclude:
+- node_modules
+description: Homebridge - HomeKit support for the impatient
+host_network: true
+image: homebridge/homebridge
+init: false
+map:
+- path: /homebridge
+  read_only: false
+  type: addon_config
+name: Homebridge
 ports:
   8581/tcp: 8581
 ports_description:
   8581/tcp: Homebridge UI
+slug: homebridge
+url: https://hub.docker.com/r/homebridge/homebridge
+version: '2024-12-19'
 webui: http://[HOST]:[PORT:8581]
-host_network: true
-init: false
-map:
-  - addon_config:rw
-image: vietde/{arch}-addon-homebridge
