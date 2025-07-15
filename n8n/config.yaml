@@ -1,0 +1,16 @@
+name: n8n Automation
+version: "1.0.0"
+slug: n8n
+description: "Run n8n as an add-on inside Home Assistant"
+startup: services
+boot: auto
+webui: "http://[HOST]:[PORT:5678]"
+ports:
+  5678/tcp: 5678
+image: "local/n8n-addon"
+arch:
+  - armv7
+  - arm64
+  - amd64
+host_network: false
+homeassistant: "2025.7.2"
