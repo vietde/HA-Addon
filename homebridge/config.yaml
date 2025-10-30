@@ -6,7 +6,7 @@ backup_exclude:
 description: Homebridge - HomeKit support for the impatient
 host_network: true
 restart: always
-image: homebridge/homebridge
+image: homebridge/homebridge:latest
 volume: ./config:/config
 init: false
 map:
