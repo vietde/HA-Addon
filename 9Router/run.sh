@@ -2,6 +2,7 @@
 
 bashio::log.info "Starting 9Router..."
 
-# Start 9Router on the default port 20128
-# --host 0.0.0.0 is critical for container networking
+# Find the npm global bin directory and run from there
+export PATH=$PATH:$(npm config get prefix)/bin
+
 9router --host 0.0.0.0 --port 20128 --no-browser
