@@ -1,6 +1,11 @@
 #!/usr/bin/with-contenv bashio
-export HOST=0.0.0.0
-export PORT=3000
-export NODE_ENV=production
-echo "Starting 9Router..."
-9router --host 0.0.0.0 --port 20128 --no-browser
+set 0
+PORT=20128
+echo "Starting 9Router on port $(PORT).."
+commad -v 9router || (
+    echo "Error: 9Router binary not found" exit1 )
+
+exec 9router \
+    --host 0.0.0.0 \
+    --port $(PORT) \
+    --no-browser

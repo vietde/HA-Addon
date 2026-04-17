@@ -1,6 +1,6 @@
 name: "9Router"
 description: "AI Router for smart fallback between Claude, Codex, Gemini, and more."
-version: "0.1.0"
+version: "0.1.1"
 slug: "9router"
 arch:
   - aarch64
@@ -8,7 +8,7 @@ arch:
   - armv7
 init: false
 ingress: true
-ingress_port: 3000
+ingress_port: 20128
 panel_icon: "mdi:router"
 map:
   - "config:rw"
