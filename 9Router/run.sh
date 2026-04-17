@@ -1,11 +1,6 @@
 #!/usr/bin/with-contenv bashio
-set -e
-PORT=20128
-echo "Starting 9Router on port $(PORT).."
-commad -v 9router || (
-    echo "Error: 9Router binary not found" exit1 )
+export HOST=0.0.0.0
+export PORT=20218
 
-exec 9router \
-    --host 0.0.0.0 \
-    --port $(PORT) \
-    --no-browser
+bashio::log.info "starting 9roter..."
+9router --host 0.0.0.0 --port 20128 --no-browser
