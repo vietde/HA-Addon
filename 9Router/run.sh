@@ -1,5 +1,5 @@
 #!/usr/bin/with-contenv bashio
-set 0
+set -e
 PORT=20128
 echo "Starting 9Router on port $(PORT).."
 commad -v 9router || (
